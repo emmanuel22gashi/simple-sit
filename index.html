@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sultan Berlin Company</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <span>🌍 اللغة: <a href="#">العربية</a> | <a href="#">English</a></span>
+  </div>
+
+  <div class="top-center">
+    <span>BTC: <strong id="mini-btc">$64,320</strong></span>
+    <span>ETH: <strong id="mini-eth">$3,125</strong></span>
+    <span>Gold: <strong id="mini-gold">$2,370</strong></span>
+  </div>
+
+  <div class="top-right">
+    <a href="#auth-section">Login</a> |
+    <a href="#auth-section">Sign Up</a> |
+    <a href="#contact">Support</a>
+  </div>
+</div>
+<button id="logout-btn" style="display:none; position: fixed; top: 10px; right: 10px; padding: 8px 12px; background-color: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;">تسجيل خروج</button>
+<div class="top-bar-extra">
+    <a href="/breakingnews/" class="btn-urgent d-none d-lg-flex" title="عاجل">
+        <div class="ur-icon">
+            <div></div>
+        </div>
+        <span class="d-none d-lg-inline-block">عاجل</span>
+    </a>
+
+    <button id="opensearch" class="search-active search2" aria-label="بحث" title="بحث">
+        <svg width="25" height="25" class="svg-icons">
+            <use href="/images/i-sprite.svg#search"></use>
+        </svg>
+    </button>
+
+    <div class="search-box search-box2 mr-auto" id="search-box">
+        <form action="/search/" method="get">
+            <div class="input-group">
+                <svg class="icon-search" width="20" height="20" class="svg-icons">
+                    <use href="/images/i-sprite.svg#search" />
+                </svg>
+                <input type="search" name="q" placeholder="البحث..." autofocus aria-labelledby="opensearch" />
+                <svg class="clear svg-icons" id="clearsearchinpt" width="15" height="15">
+                    <use href="/images/i-sprite.svg#multiply"/>
+                </svg>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">Sultan Berlin</div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resources">Courses</a></li>
+      <li><a href="#signup" class="cta-btn">Get Started</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- News Ticker -->
+<div class="news-container">
+  <div id="news-ticker" class="news-ticker">
+    <span>آخر الأخبار: الموقع الجديد أصبح متاح الآن! &nbsp;&nbsp;</span>
+    <span>تحديث جديد: إضافة الوضع الليلي لجميع الصفحات! &nbsp;&nbsp;</span>
+    <span>العروض الخاصة: خصم 20% على الدورات هذا الأسبوع! &nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="large-hero">
+  <div class="hero-overlay">
+    <h1>مرحبًا بكم في Sultan Berlin AI</h1>
+    <p>حلول مبتكرة للذكاء الاصطناعي وتقنيات المستقبل الرقمي.</p>
+    <a href="#features" class="btn">استكشف خدماتنا</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>عن الشركة</h2>
+  <p>نحن شركة متخصصة في الذكاء الاصطناعي وتطوير حلول تقنية مبتكرة للشركات والأفراد.</p>
+</section>
+
+<!-- Features Section -->
+<section id="features">
+  <h2>مميزات الذكاء الاصطناعي</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <i class="fas fa-chart-line fa-2x"></i>
+      <h3>تحليل البيانات</h3>
+      <p>يمكن للذكاء الاصطناعي معالجة كميات ضخمة من البيانات بسرعة ودقة.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-bolt fa-2x"></i>
+      <h3>توقعات دقيقة</h3>
+      <p>التنبؤ بالاتجاهات المستقبلية واتخاذ القرارات الذكية بسهولة.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-robot fa-2x"></i>
+      <h3>أتمتة المهام</h3>
+      <p>تسريع الأعمال الروتينية وتحسين كفاءة العمليات اليومية.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-headset fa-2x"></i>
+      <h3>دعم العملاء الذكي</h3>
+      <p>روبوتات محادثة AI لتقديم دعم سريع وفعال للعملاء على مدار الساعة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Resources / Courses Section -->
+<section id="resources">
+  <h2>الموارد والدورات</h2>
+  <p class="section-description">تعلم، تطور، وابدأ مستقبلك في الذكاء الاصطناعي مع أفضل الدورات المجانية لدينا.</p>
+  
+  <div class="resources-grid">
+    <div class="resource-card">
+      <img src="https://via.placeholder.com/300x200" alt="دورة الذكاء الاصطناعي للمبتدئين">
+      <h3>مقدمة في الذكاء الاصطناعي</h3>
+      <p>تعرف على أساسيات الذكاء الاصطناعي، وتعلم كيف يمكن أن يحول الأعمال ويطور المستقبل الرقمي.</p>
+      <a href="#" class="btn">ابدأ الآن</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="https://via.placeholder.com/300x200" alt="تحليل البيانات">
+      <h3>تحليل البيانات باستخدام AI</h3>
+      <p>تعلم كيف تستخدم الخوارزميات لتحليل البيانات الكبيرة واتخاذ قرارات أكثر دقة وذكاء.</p>
+      <a href="#" class="btn">شاهد الدورة</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="https://via.placeholder.com/300x200" alt="تطبيقات الذكاء الاصطناعي">
+      <h3>تطبيقات الذكاء الاصطناعي</h3>
+      <p>اكتشف كيف تُستخدم تقنيات AI في مجالات مثل الطب، التسويق، والأمن السيبراني.</p>
+      <a href="#" class="btn">تعلم المزيد</a>
+    </div>
+  </div>
+</section>
+
+<!-- Financial Markets Section -->
+<section id="markets">
+  <h2>الأسواق المالية الذكية</h2>
+  <p class="section-description">
+    تتبع أداء أهم الأصول الرقمية والأسهم العالمية بذكاء وسهولة.
+  </p>
+
+  <div class="market-container">
+    <div class="market-card">
+      <h3>البيتكوين (BTC)</h3>
+      <p>السعر الحالي: <span class="price" id="btc-price">Loading...</span></p>
+      <p class="change" id="btc-change">%</p>
+    </div>
+
+    <div class="market-card">
+      <h3>الإيثيريوم (ETH)</h3>
+      <p>السعر الحالي: <span class="price" id="eth-price">Loading...</span></p>
+      <p class="change" id="eth-change">%</p>
+    </div>
+
+    <div class="market-card">
+      <h3>الذهب (XAU)</h3>
+      <p>السعر الحالي: <span class="price" id="gold-price">Loading...</span></p>
+      <p class="change" id="gold-change">%</p>
+    </div>
+
+    <div class="market-card">
+      <h3>مؤشر ناسداك (NASDAQ)</h3>
+      <p>السعر الحالي: <span class="price" id="nasdaq-price">Loading...</span></p>
+      <p class="change" id="nasdaq-change">%</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>اتصل بنا</h2>
+  <p>للاستفسارات أو الدعم، يرجى ملء النموذج أدناه وسنقوم بالرد عليك في أسرع وقت.</p>
+  <form>
+    <input type="text" placeholder="الاسم الكامل" required>
+    <input type="email" placeholder="البريد الإلكتروني" required>
+    <textarea placeholder="رسالتك" required></textarea>
+    <button type="submit" class="btn">إرسال</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>© 2025 Sultan Berlin. جميع الحقوق محفوظة.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button id="dark-mode-toggle" style="position: fixed; bottom: 20px; right: 20px; padding: 8px 12px; background-color: #333; color: #fff; border: none; border-radius: 5px; cursor: pointer;">🌙 وضع الليل</button>
+
+<script src="script.js"></script>
+</body>
+</html>
